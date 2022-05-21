@@ -1,0 +1,141 @@
+body {
+    background-color: #2E3440;
+    color: #ECEFF4;
+    font-family: sans-serif;
+    padding: 2em;
+    font-size: x-large;
+}
+@media (max-width: 1200px) {
+	body {
+		padding: 1em 0.5em;
+	}
+}
+::selection {
+    background-color: #8FBCBB;
+    color: #2E3440;
+}
+h1 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1.5em;
+    line-break: anywhere;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #434C5E;
+}
+pre {
+    font-family: 'Fira Code', monospace;
+    animation: appear 0.75s ease;
+    color: #D8DEE9;
+    transition: color 0.4s ease;
+}
+hr {
+    display: none;
+}
+a {
+    color: #8FBCBB;
+    text-decoration: none;
+    border: transparent 1px solid;
+    transition: border-color 0.45s ease;
+}
+a:hover, a:active, a:focus {
+    border-bottom-color: #8FBCBB;
+}
+
+form.new-folder > input {
+    background-color: #2E3440;
+    color: #8FBCBB;
+    font-size: x-large;
+    font-family: 'Fira Code', monospace;
+    outline: none;
+
+    border: transparent 1px solid;
+    transition: all 0.45s ease;
+    transition-property: border-color, color;
+}
+form.new-folder > input:hover, 
+form.new-folder > input:active, 
+form.new-folder > input:focus {
+    border-bottom-color: #8FBCBB;
+}
+form.new-folder > input.invalid {
+    color: #BF616A;
+}
+form.new-folder > input.invalid:hover, 
+form.new-folder > input.invalid:active, 
+form.new-folder > input.invalid:focus {
+    border-bottom-color: #BF616A;
+}
+
+.upload-overlay {
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #3B4252;
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    transition: opacity 0.45s ease;
+}
+.upload-overlay .material-icons-round {
+    font-size: 5rem;
+    color: #8FBCBB;
+}
+.upload-overlay .progress {
+    background-color: #8FBCBB;
+    border-radius: 20px;
+    height: 5px;
+    min-width: 5px;
+    width: 0px;
+    transition: width 0.5s ease;
+}
+
+.context-menu {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+    padding: 2px 10px;
+    transition: all 0.45s ease;
+    border-radius: 50px;
+    background-color: #4C566A;
+}
+.context-menu > .material-icons-round {
+    cursor: pointer;
+    user-select: none;
+    margin: 0px 7px;
+    color: #8FBCBB;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #2E3440;
+}
+::-webkit-scrollbar-thumb {
+    background: #4C566A;
+    border-radius: 10px;
+}
+
+@media (max-width: 1450px) {
+    pre {
+        color: #2E3440;
+        overflow: hidden;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
