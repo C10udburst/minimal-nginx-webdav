@@ -3,10 +3,11 @@
 Minimal Nginx webdav configuration
 
 ## Features
-- Modern dark-mode ui, based on nord color scheme
+- Modern dark-mode ui based on nord color scheme
 - Compatibility with both web browsers and normal file browsers
-- Works with or without javascript
-- Upload, delete, rename files and make folders through the web browser
+- Can work without javascript enabled
+- Delete, rename and make files folders through a web browser[^*]
+- Upload files by dragging and dropping through a web browser[^*]
 - File icons
 
 ## Screenshot
@@ -17,3 +18,5 @@ Minimal Nginx webdav configuration
 2. Create `/var/www/webdav/`
 3. Put all `html` `js` and `css` files in it
 4. Configure nginx like the [example.conf](https://github.com/C10udburst/minimal-nginx-webdav/blob/master/example.conf) file
+
+[^*]: Requires javascript enabled
