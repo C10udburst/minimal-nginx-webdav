@@ -15,8 +15,9 @@ Minimal Nginx webdav configuration
 
 ## Installation
 1. Install [Nginx](https://www.nginx.com/blog/setting-up-nginx/)
-2. Create `/var/www/webdav/`
-3. Put all `html` `js` and `css` files in it
-4. Configure nginx like the [example.conf](https://github.com/C10udburst/minimal-nginx-webdav/blob/master/example.conf) file
+2. Install dav support by running `sudo apt-get install libnginx-mod-http-dav-ext`
+3. Create `/var/www/webdav/`
+4. Put all `html` `js` and `css` files in it
+5. Configure nginx like the [example.conf](https://github.com/C10udburst/minimal-nginx-webdav/blob/master/example.conf) file
 
 [^*]: Requires javascript enabled
